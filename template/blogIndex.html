@@ -1,0 +1,166 @@
+<script type="application/x-javascript"> addEventListener("load", function () {
+    setTimeout(hideURLbar, 0);
+}, false);
+function hideURLbar() {
+    window.scrollTo(0, 1);
+} </script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+        });
+    });
+</script>
+<!---End-smoth-scrolling---->
+
+<div class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html">Android <span>Work  Club</span></a>
+            </div>
+            <div class="top-menu" hidden>
+                <span class="menu"><img src="images/nav.png" alt=""/> </span>
+                <ul>
+                    <li><a href="#" class="active">Android</a></li>
+                    <li><a href="#">source</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Me</a></li>
+                </ul>
+            </div>
+            <!--script-nav-->
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle("slow", function () {
+                    });
+                });
+            </script>
+            <div class="clerfix"></div>
+        </div>
+    </div>
+</div>
+<!--header-->
+<div class="gallery-cursual">
+    <!-- requried-jsfiles-for owl -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 4,
+                lazyLoad: true,
+                autoPlay: true,
+                pagination: false,
+            });
+        });
+    </script>
+    <!-- //requried-jsfiles-for owl -->
+
+    <div class="content">
+    </div>
+
+    <!--desinger-->
+    <div class="designer">
+        <div class="container">
+            <div class="designer-grids">
+                <div class="col-md-3 designer-grid"  ng-repeat=" (blogIndex, typeItem) in blogType track by $index">
+                    <div>
+                        <img src="images/default1.png" class="img-responsive" alt="/">
+                        <div class="designer-info" ng-click="searchBlogByType(typeItem)">
+                            <div class="mask">
+                                <h4>{{typeItem}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--news-->
+
+    <div class="news">
+        <div class="container">
+            <!--1 -->
+            <div ng-repeat=" (blogIndex, blogItem) in blogList track by $index">
+                <div class="new-grids">
+
+                    <div ng-if="blogIndex % 2 != 0">
+                        <div class="col-md-6 new-grid1">
+                            <h5>{{blogItem.createdOn | date:'yyyy-MM-dd'}}</h5>
+                            <h4 ng-click="gotoDetail(blogItem)">
+                                {{blogItem.blogName}}
+                                <!--<a href="{{serverUrl}}{{blogItem.blogContent}}">{{blogItem.blogName}}</a>-->
+                            </h4>
+                            <p>{{blogItem.description}}</p>
+                        </div>
+                        <div class="col-md-6 new-grid">
+                            <a ng-click="gotoDetail(blogItem)" class="mask">
+
+                                <img src="{{blogItem.blogPic}}" class="img-responsive zoom-img" alt="">
+                            </a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <div ng-if="blogIndex % 2 == 0">
+
+                        <div class="col-md-6 new-grid">
+                            <a ng-click="gotoDetail(blogItem)"  class="mask">
+                                <img src="{{blogItem.blogPic}}" class="img-responsive zoom-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6 new-grid1">
+                            <h5>{{blogItem.createdOn | date:'yyyy-MM-dd'}}</h5>
+                            <h4 ng-click="gotoDetail(blogItem)">
+                                {{blogItem.blogName}}
+                                <!--<a href="{{serverUrl}}{{blogItem.blogContent}}">{{blogItem.blogName}}</a>-->
+                            </h4>
+                            <p>{{blogItem.description}}</p>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--news-->
+    <!--specials-->
+    <div class="specials-section" hidden>
+        <div class="center">
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-top">
+            <p>Android学习网站 milomei@163.com By Milo</p>
+            <br>
+            <a href="https://www.upyun.com/">图片存储来自又拍云
+            <img src="/images/又拍云_logo.png" width="100" height="30"></a>
+            <br>
+            <a href="http://www.miitbeian.gov.cn"><p>鄂ICP备18010496号-1</p></a>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $().UItoTop({easingType: 'easeOutQuart'});
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+</div>

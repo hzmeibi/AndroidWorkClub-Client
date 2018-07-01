@@ -1,0 +1,64 @@
+<!---End-smoth-scrolling---->
+
+<!--底部分页样式 -->
+<style>
+
+    .div_center {
+        /*height: 100%;*/
+        width: 100%;
+        border-top: 2px solid #994868;
+    }
+
+    #ifr {
+        height: 100%;
+        margin: 0 0 auto;
+        width: 100%;
+    }
+
+
+</style>
+
+<!--header-->
+<div class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="../index.html">Android <span>Work  Club</span></a>
+            </div>
+            <!--script-nav-->
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle("slow", function () {
+                    });
+                });
+            </script>
+            <div class="clerfix"></div>
+        </div>
+    </div>
+</div>
+<!--content 后期自动匹配-->
+
+<div class="div_center">
+    <iframe id="ifr" frameborder="0" width="100%" scrolling="no"
+            src=""></iframe>
+</div>
+
+<!--footer-->
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-top">
+            <p>Android学习网站 milomei@163.com By Milo</p>
+            <br>
+            <a href="https://www.upyun.com/">图片存储来自又拍云
+                <img src="/images/又拍云_logo.png" width="100" height="30"></a>
+            <br>
+            <a href="http://www.miitbeian.gov.cn"><p>鄂ICP备18010496号-1</p></a>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $().UItoTop({easingType: 'easeOutQuart'});
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+</div>

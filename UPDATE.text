@@ -1,0 +1,16 @@
+* 本地更新完成,git提交;使用FTP上传文件,网站自动更新
+* 文章样式 ：
+* 1.标题 + 作者 + 日期 + 描述
+* 2.文章内容(图片 + 文字)
+
+△ index.html
+△ demo.html + demo_index.html
+
+
+1.提交基础模板框架
+2.修改类目，调整样式
+3.新增demo
+4.提交 AndroidHandler消息处理机制.html
+5.提交 数据结构与算法-数组与链表1
+6.更新提交文件名流程改为 demo.html + demo_index.html
+7.提交备案信息

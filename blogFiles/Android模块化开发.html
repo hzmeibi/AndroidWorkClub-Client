@@ -1,0 +1,440 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') bottom left repeat-x;}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;-ms-border-radius:0.3em;-o-border-radius:0.3em;border-radius:0.3em;-webkit-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-moz-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:#fff 0.5em solid}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function,
+.hljs-name {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type,
+.hljs-link_reference {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f;
+}
+
+/* Solarized Violet */
+.hljs-link_label {
+  color: #6c71c4;
+}
+
+.tex .hljs-formula {
+  background: #eee8d5;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">Android模块化开发</h1>
+
+<pre><code>作者:Milo
+日期:2018/05/18
+描述:Android模块化发
+来源:[Android 技术分享](https://www.androidwork.club/)
+</code></pre>
+
+<h2 id="toc_1">为什么要模块化 ？</h2>
+
+<ul>
+<li>独立开发调试，减少编译时间，提高工作效率</li>
+<li>降低模块间的耦合，易于维护</li>
+<li>代码复用，提高代码质量</li>
+</ul>
+
+<p><img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/006e221d407c7ab880d3b0e869aee421.png" alt=""/></p>
+
+<p>结合上图分析：<br/>
+1. APP module 由多个模块组成。同时每个模块都依赖于base module中的基础组件<br/>
+2. 每个模块独立运行，既可以作为library，也可以作为application。<br/>
+3. 在base module中的基础组件创建时，应该跟模块间保持低耦合，易于维护。</p>
+
+<h2 id="toc_2">涉及到的问题</h2>
+
+<ul>
+<li>模块划分，粒度不易过大、也不易过小。</li>
+<li>模块间的通信（跳转/传值、监听），activity/fragment之间的跳转和传值使用<a href="https://github.com/alibaba/ARouter">Arouter</a>，监听使用RxBus或者<a href="https://github.com/greenrobot/EventBus">EventBus</a>。</li>
+<li>每个模块可以独立运行，也可以作为library。即debug时为application，release时为library。</li>
+<li>资源文件名称重复</li>
+<li>library重复调用、版本不一致</li>
+</ul>
+
+<h2 id="toc_3">实现</h2>
+
+<h3 id="toc_4">1.项目架构</h3>
+
+<p><img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/d1a5f447407aaf258057223e5d6ef359.jpg" alt=""/></p>
+
+<h3 id="toc_5">2.模块间独立运行</h3>
+
+<p>思路：通过布尔值控制当前module是否为library或者application。同时为不同状态配置不同的AndroidManifest和Application。<br/>
+<img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/e11fe06a408d0ba880c14d385b07cb29.jpg" alt=""/></p>
+
+<p><strong>build.gradle</strong></p>
+
+<pre><code>//library、application
+if (IS_DEBUG_TYPE) {
+    apply plugin: &#39;com.android.application&#39;
+} else {
+    apply plugin: &#39;com.android.library&#39;
+}
+
+//AndroidManifest.xml
+android {
+    ...
+    sourceSets {
+        main {
+            if (IS_DEBUG_TYPE) {
+                manifest.srcFile(&quot;src/main/AndroidManifest.xml&quot;)
+            } else {
+                manifest.srcFile(&quot;src/main/release/AndroidManifest.xml&quot;)
+            }
+        }
+    }
+}
+</code></pre>
+
+<p><strong>Application</strong></p>
+
+<p><img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/b5221eb940e834d5809e85113527dbd9.jpg" alt=""/></p>
+
+<p>为了方便调用，不论debug还是release状态下，调用application保持一致，用MyApp作为统一入口。</p>
+
+<pre><code>   Application application = MyApp.getInstance().getApplication();
+</code></pre>
+
+<pre><code>/**
+ * Created by milo on 2018/5/15.
+ * application
+ */
+public class MyApp implements ApplicationService {
+    private Application mApplication;
+
+    public static MyApp getInstance() {
+        return MyAppHolder.INSTANCE;
+    }
+
+    private static class MyAppHolder {
+        private static MyApp INSTANCE = new MyApp();
+    }
+
+    /**
+     * 获取application 根据不同状态
+     *
+     * @return
+     */
+    @Override
+    public Application getApplication() {
+        if (BuildConfig.IS_DEBUG_TYPE &amp;&amp; mApplication == null) {
+            //debug状态下获取debug的application
+            mApplication = DebugMyApp.getInstance().getApplication();
+        }
+        return mApplication;
+    }
+
+    /**
+     * 用作初始化一些第三方框架内容
+     *
+     * @param application
+     */
+    @Override
+    public void loadModuleApplicationService(Application application) {
+        if (BuildConfig.IS_DEBUG_TYPE) {
+            DebugMyApp.getInstance().loadModuleApplicationService(getApplication());
+        } else {
+            mApplication = application;
+        }
+        //初始化第三方library
+    }
+}
+</code></pre>
+
+<p>由上面代码知道，在release状态下，application是由主module通过调用各个模块的<code>loadModuleApplicationService</code>方法传值过来的。其中<code>loadModuleApplicationService</code>方法主要用于各个模块初始化一些第三方library，一般在主module的application创建时调用。其中ApplicationService是一个接口：</p>
+
+<pre><code>/**
+ * Created by milo on 2018/5/15.
+ */
+public interface ApplicationService {
+    /**
+     * 获取 Application
+     *
+     * @return
+     */
+    Application getApplication();
+
+    /**
+     * 主要处理一些第三方library初始化工作 在主APP 创建的时候调用
+     *
+     * @param application
+     */
+    void loadModuleApplicationService(Application application);
+}
+
+</code></pre>
+
+<p>以上内容可以通过IS_DEBUG_TYPE值自由的切换各个module的状态，true为application，独立测试运行；false为library供其他module调用。</p>
+
+<h3 id="toc_6">3.模块间的通信（跳转、传值、监听）</h3>
+
+<p><strong>ARouter</strong><br/>
+Android平台中对页面、服务提供路由功能的中间件。<br/>
+<em>具体使用说明请参考<a href="https://github.com/alibaba/ARouter">Arouter Github</a></em></p>
+
+<p>由于路由是模块间通信的核心，所以操作放在base module中，如下：<br/>
+<img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/e4fb1501403a1d0580062a88994bd4b6.jpg" alt=""/></p>
+
+<p>在ARouter项目中提供了简易的调用方法，考虑到项目的耦合性以及后期维护，这里把ARouter提供的接口和路由路径都独立出来形成标准，调用时只需要调用自己封装的路由模块，具体实现还是ARouter来完成。如下：</p>
+
+<p><strong>路由统一管理</strong></p>
+
+<pre><code>/**
+ * Created by milo on 2018/5/17.
+ * 统一控制跳转路由
+ */
+
+public class RouterManager {
+
+    public static void goToActivity(String path, Context context) {
+        if (BuildConfig.IS_DEBUG_TYPE) {
+            //debug状态下 各个library独立测试，无法跳转
+            Log.e(&quot;RouterManager&quot;, &quot;debug状态下，module之间不能通信&quot;);
+            return;
+        }
+        ARouter.getInstance()
+                .build(path)
+                .navigation(context);
+    }
+
+    public static void goToActivity(String path, Context context, Bundle bundle) {
+        if (BuildConfig.IS_DEBUG_TYPE) {
+            return;
+        }
+        ARouter.getInstance()
+                .build(path)
+                .with(bundle)
+                .navigation(context);
+    }
+
+    public static void goToActivity(String path, Context context, RouterCallback callback) {
+        if (BuildConfig.IS_DEBUG_TYPE) {
+            return;
+        }
+        ARouter.getInstance()
+                .build(path)
+                .navigation(context, callback);
+    }
+
+    public static void goToActivity(String path, Context context, Bundle bundle, RouterCallback callback) {
+        if (BuildConfig.IS_DEBUG_TYPE) {
+            return;
+        }
+        ARouter.getInstance()
+                .build(path)
+                .with(bundle)
+                .navigation(context, callback);
+    }
+}
+</code></pre>
+
+<p><strong>路由回调接口</strong></p>
+
+<pre><code>/**
+ * Created by milo on 2018/5/18.
+ * 路由回调接口
+ */
+
+public abstract class RouterCallback implements NavigationCallback{
+
+    @Override
+    public void onFound(Postcard postcard) {
+
+    }
+
+    @Override
+    public void onLost(Postcard postcard) {
+
+    }
+
+    @Override
+    public void onArrival(Postcard postcard) {
+
+    }
+
+    @Override
+    public void onInterrupt(Postcard postcard) {
+
+    }
+}
+</code></pre>
+
+<p><strong>路由跳转路径</strong></p>
+
+<pre><code>public class RouterPath {
+    public static final String A_ACTIVITY = &quot;/a/activity&quot;;
+    public static final String B_ACTIVITY = &quot;/b/activity&quot;;
+}
+</code></pre>
+
+<p><strong>简单使用</strong></p>
+
+<ol>
+<li>首先在目标界面添加<code>@Route(path = RouterPath.A_ACTIVITY)</code>注解，其中path为目标界面的路由地址，在base module中统一配置。</li>
+<li>通过调用<code>RouterManager.goToActivity(RouterPath.A_ACTIVITY,this)</code>方法实现跳转，在这个方法中提供了<code>String path, Context context, Bundle bundle, RouterCallback callback</code>等入参，分别表示路由路径、上下文、bundle（用于传值）、回调接口，后期根据自己需要定义更多参数。</li>
+</ol>
+
+<p>参考：<br/>
+<a href="https://blog.csdn.net/yalinfendou/article/details/78822749">https://blog.csdn.net/yalinfendou/article/details/78822749</a><br/>
+<a href="https://github.com/alibaba/ARouter">https://github.com/alibaba/ARouter</a></p>
+
+<br><br><br><br>
+
+</div></body>
+
+</html>

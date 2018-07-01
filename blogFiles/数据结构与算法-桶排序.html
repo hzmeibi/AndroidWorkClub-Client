@@ -1,0 +1,259 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') bottom left repeat-x;}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;-ms-border-radius:0.3em;-o-border-radius:0.3em;border-radius:0.3em;-webkit-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-moz-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:#fff 0.5em solid}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function,
+.hljs-name {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type,
+.hljs-link_reference {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f;
+}
+
+/* Solarized Violet */
+.hljs-link_label {
+  color: #6c71c4;
+}
+
+.tex .hljs-formula {
+  background: #eee8d5;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">数据结构与算法-桶排序</h1>
+
+<pre><code>作者:Milo
+日期:2018/06/05
+描述:学习桶排序的分治思想。
+来源:[Android 技术分享](https://www.androidwork.club/)
+</code></pre>
+
+<h2 id="toc_1">概念</h2>
+
+<p><strong>桶排序</strong>或所谓的箱排序，是一个排序算法，工作原理就是将数组分到有限数量的桶子里，每个桶子再个别排序。桶排序是鸽巢排序的一种归纳结果。当要排序的数组内的数值是均匀分配的时候，桶排序使用线性时间O(n)。桶排序体现出的是<strong>分治思想</strong></p>
+
+<h2 id="toc_2">原理</h2>
+
+<p><img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/06/10/64dc951f405c1dd280d670c93c281f33.png" alt=""/></p>
+
+<p>假设有一个长度为N的待排关键字序列K[1...N]。<br/>
+1.将这个序列划分为M个子区间即<strong>桶</strong>；</p>
+
+<p>2.基于<strong>某种映射函数</strong>，将待排序的关键字K映射到第i个桶中（即即桶数组B的下标i）；</p>
+
+<p>3.对每个桶B[i]中的所有元素进行比较排序（一般采用快速排序），然后依次输出桶数组B[0]...B[M]的全部内容即是一个有序序列。</p>
+
+<h2 id="toc_3">代价分析</h2>
+
+<p>桶排序利用函数映射关系，减少了几乎所有的比较工作。实际上f(k)值的计算，其作用就相当于快排中的划分，把大量数据分割成基本有序的数据块（桶），然后只需要对桶中少量数据进行先进的比较排序即可。<br/>
+(1) 映射函数f(k)能够将N个数据平均的分配到M个桶中，这样每个桶就有[N/M]个数据量。</p>
+
+<p>(2) 尽量的增大桶的数量。极限情况下每个桶只能得到一个数据，这样就完全避开了桶内数据的“比较”排序操作。当然，做到这一点很不容易，数据量巨大的情况下，f(k)函数会使得桶集合的数量巨大，空间浪费严重。这就是一个时间代价和空间代价的权衡问题了。</p>
+
+<h2 id="toc_4">具体实现</h2>
+
+<pre><code>/**
+     * 桶排序
+     */
+    public final void bucketSort() {
+        int[] ids = new int[]{6, 1, 4, 2, 3, 5, 10};
+        int[] ids1 = new int[10];//创建10个桶分别存放数据
+
+        System.out.println(&quot;需要排序的数据：&quot;);
+        for (int i = 0; i &lt; ids.length; i++) {
+            System.out.print(ids[i] + &quot;,&quot;);
+            ids1[ids[i] - 1] = ids[i];
+        }
+        System.out.println(&quot;&quot;);
+        //升序
+        System.out.println(&quot;升序:&quot;);
+        for (int i = 0; i &lt; ids1.length; i++) {
+            if (ids1[i] != 0) {
+                System.out.print(ids1[i] + &quot;,&quot;);
+            }
+        }
+        System.out.println(&quot;&quot;);
+        //降序
+        System.out.println(&quot;降序:&quot;);
+        for (int i = ids1.length - 1; i &gt;= 0; i--) {
+            if (ids1[i] != 0) {
+                System.out.print(ids1[i] + &quot;,&quot;);
+            }
+        }
+    }
+</code></pre>
+
+<p>输出结果为：</p>
+
+<pre><code>需要排序的数据：
+6,1,4,2,3,5,10,
+升序:
+1,2,3,4,5,6,10,
+降序:
+10,6,5,4,3,2,1,
+</code></pre>
+
+<h2 id="toc_5">参考</h2>
+
+<p><a href="https://baike.baidu.com/item/%E6%A1%B6%E6%8E%92%E5%BA%8F/4973777?fr=aladdin#reference-%5B1%5D-1784217-wrap">1.百度百科</a></p>
+
+<p><a href="http://hxraid.iteye.com/blog/647759">2.【排序结构6】 桶排序</a></p>
+
+<br><br><br><br>
+
+</div></body>
+
+</html>

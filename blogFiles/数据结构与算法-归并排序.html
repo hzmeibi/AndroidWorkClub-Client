@@ -1,0 +1,290 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') bottom left repeat-x;}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;-ms-border-radius:0.3em;-o-border-radius:0.3em;border-radius:0.3em;-webkit-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-moz-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:#fff 0.5em solid}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function,
+.hljs-name {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type,
+.hljs-link_reference {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f;
+}
+
+/* Solarized Violet */
+.hljs-link_label {
+  color: #6c71c4;
+}
+
+.tex .hljs-formula {
+  background: #eee8d5;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">数据结构与算法-归并排序</h1>
+
+<pre><code>作者:Milo
+日期:2018/06/13
+描述:学习归并排序的分治思想。
+来源:[Android 技术分享](https://www.androidwork.club/)
+</code></pre>
+
+<h2 id="toc_1">概念</h2>
+
+<p>归并排序是建立在归并操作上的一种有效的排序算法。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。将两个有序表合并成一个有序表，称为二路归并。该算法采用<strong>分治思想</strong>。</p>
+
+<p><img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=236fa62859b5c9ea76fe0bb1b450dd65/c8177f3e6709c93d673b9ed49d3df8dcd00054c3.jpg" alt=""/></p>
+
+<h2 id="toc_2">实现</h2>
+
+<p><strong>mergeSort</strong><br/>
+```<br/>
+    /**<br/>
+     * 归并排序<br/>
+     * 1.先递归子序列 使其有序<br/>
+     * 2.合并有序的子序列<br/>
+     */<br/>
+    public static void mergeSort(int[] array) {<br/>
+        int[] temp = new int[array.length];//在排序前，先建好一个长度等于原数组长度的临时数组，避免递归中频繁开辟空间<br/>
+        sort(array, 0, array.length - 1, temp);<br/>
+    }</p>
+
+<pre><code>/**
+ * 递归子序列
+ *
+ * @param arr
+ * @param left
+ * @param right
+ * @param temp
+ */
+private static void sort(int[] arr, int left, int right, int[] temp) {
+    if (left &lt; right) {
+        int mid = (left + right) / 2;
+        sort(arr, left, mid, temp);//左边归并排序，使得左子序列有序
+        sort(arr, mid + 1, right, temp);//右边归并排序，使得右子序列有序
+        merge(arr, left, mid, right, temp);//将两个有序子数组合并操作
+    }
+}
+
+/**
+ * 合并子序列
+ *
+ * @param arr
+ * @param left
+ * @param mid
+ * @param right
+ * @param temp
+ */
+private static void merge(int[] arr, int left, int mid, int right, int[] temp) {
+    int i = left;//左序列指针
+    int j = mid + 1;//右序列指针
+    int t = 0;//临时数组指针
+    while (i &lt;= mid &amp;&amp; j &lt;= right) {
+        if (arr[i] &lt;= arr[j]) {
+            temp[t++] = arr[i++];
+        } else {
+            temp[t++] = arr[j++];
+        }
+    }
+    while (i &lt;= mid) {//将左边剩余元素填充进temp中
+        temp[t++] = arr[i++];
+    }
+    while (j &lt;= right) {//将右序列剩余元素填充进temp中
+        temp[t++] = arr[j++];
+    }
+    t = 0;
+    //将temp中的元素全部拷贝到原数组中
+    while (left &lt;= right) {
+        arr[left++] = temp[t++];
+    }
+}
+</code></pre>
+
+<pre><code>**main**
+</code></pre>
+
+<pre><code>public static void main(String[] arg) {
+    int[] array = new int[]{6, 1, 4, 2, 3, 5, 10};
+    System.out.println(&quot;排序之前：&quot;);
+    for (int element : array) {
+        System.out.print(element + &quot; &quot;);
+    }
+    mergeSort(array);
+    System.out.println(&quot;\n排序之后：&quot;);
+    for (int element : array) {
+        System.out.print(element + &quot; &quot;);
+    }
+}
+</code></pre>
+
+<pre><code>输出结果：
+
+</code></pre>
+
+<p>排序之前：<br/>
+6 1 4 2 3 5 10 <br/>
+排序之后：<br/>
+1 2 3 4 5 6 10 <br/>
+```</p>
+
+<h2 id="toc_3">参考</h2>
+
+<p><a href="https://www.cnblogs.com/chengxiao/p/6194356.html">1.图解排序算法(四)之归并排序</a></p>
+
+<br><br><br><br>
+
+</div></body>
+
+</html>

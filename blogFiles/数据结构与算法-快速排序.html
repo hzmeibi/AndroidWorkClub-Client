@@ -1,0 +1,273 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') bottom left repeat-x;}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;-ms-border-radius:0.3em;-o-border-radius:0.3em;border-radius:0.3em;-webkit-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-moz-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:#fff 0.5em solid}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function,
+.hljs-name {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type,
+.hljs-link_reference {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f;
+}
+
+/* Solarized Violet */
+.hljs-link_label {
+  color: #6c71c4;
+}
+
+.tex .hljs-formula {
+  background: #eee8d5;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">数据结构与算法-快速排序</h1>
+
+<pre><code>作者:Milo
+日期:2018/06/11
+描述:学习快速排序的递归和分治思想。
+来源:[Android 技术分享](https://www.androidwork.club/)
+</code></pre>
+
+<h2 id="toc_1">概念</h2>
+
+<p>快速排序是对冒泡排序的一种改进。通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都要比另一部分所有数据小，然后再按照此方法对两部分数据分别进行快速排序整个过程可以递归进行。实质还是<strong>分治思想</strong></p>
+
+<h2 id="toc_2">实现原理</h2>
+
+<ol>
+<li>在待排序的元素任取一个元素作为基准元素（通常选取第一个元素）；</li>
+<li>将待排序的元素进行分区，比基准元素大的放在它的右边，比它小的放在左边；</li>
+<li>对左右两个分区重复以上操作直到所有元素都是有序的。</li>
+</ol>
+
+<h2 id="toc_3">时间复杂度</h2>
+
+<p>一般情况下时间复杂度为 O(N * logN)，最坏情况下时间复杂度为 O(N * N)。快速排序是一种不稳定的排序算法</p>
+
+<h2 id="toc_4">代码实现</h2>
+
+<pre><code>    /**
+     * 快速排序
+     *
+     * @param arr    待排序的数组
+     * @param _left  左边移动的下标
+     * @param _right 右边移动的下标
+     */
+    public static void quickSort(int arr[], int _left, int _right) {
+        int left = _left;
+        int right = _right;
+        int temp = 0;
+        if (left &lt;= right) {   //待排序的元素至少有两个的情况
+            //待排序的第一个元素作为基准元素
+            temp = arr[left];
+            //从左右两边交替扫描，直到left = right
+            while (left != right) {
+                //从左往右扫描，找到第一个比基准元素大的元素
+                while (left &lt; right &amp;&amp; arr[left] &lt;= temp) {
+                    left++;
+                    //找到这种元素arr[left]后，与arr[right]交换
+                    arr[right] = arr[left];
+                }
+                //从右往左扫描，找到第一个比基准元素小的元素
+                while (right &gt; left &amp;&amp; arr[right] &gt;= temp) {
+                    right--;
+                    //找到这种元素arr[right]后与arr[left]交换
+                    arr[left] = arr[right];
+                }
+            }
+            //基准元素归位 这样一次循环执行完成
+            arr[right] = temp;
+            //再将左右两部分分别以上面的方式排序直至所有元素都有序
+            //对基准元素左边的元素进行递归排序
+            quickSort(arr, _left, left - 1);
+            //对基准元素右边的进行递归排序
+            quickSort(arr, right + 1, _right);
+        }
+    }
+    
+  public static void main(String[] arg) {
+        int array[] = {10, 5, 3, 1, 7, 2, 8};
+        System.out.println(&quot;排序之前：&quot;);
+        for (int element : array) {
+            System.out.print(element + &quot; &quot;);
+        }
+
+        quickSort(array, 0, array.length - 1);
+
+        System.out.println(&quot;\n排序之后：&quot;);
+        for (int element : array) {
+            System.out.print(element + &quot; &quot;);
+        }
+    }
+</code></pre>
+
+<p>输出结果：</p>
+
+<pre><code>排序之前：
+10 5 3 1 7 2 8 
+排序之后：
+1 2 3 5 7 8 10 
+</code></pre>
+
+<h2 id="toc_5">参考</h2>
+
+<p><a href="https://www.cnblogs.com/MOBIN/p/4681369.html">1.图解快速排序</a></p>
+
+<br><br><br><br>
+
+</div></body>
+
+</html>

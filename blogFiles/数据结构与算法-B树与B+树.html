@@ -1,0 +1,289 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') bottom left repeat-x;}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;-ms-border-radius:0.3em;-o-border-radius:0.3em;border-radius:0.3em;-webkit-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-moz-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;box-shadow:rgba(0,0,0,0.15) 0 1px 4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:#fff 0.5em solid}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function,
+.hljs-name {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type,
+.hljs-link_reference {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f;
+}
+
+/* Solarized Violet */
+.hljs-link_label {
+  color: #6c71c4;
+}
+
+.tex .hljs-formula {
+  background: #eee8d5;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">数据结构与算法-B树与B+树</h1>
+
+<pre><code>作者:Milo
+日期:2018/05/20
+描述:了解B、B+树的使用场景和基本操作。
+来源:[Android 技术分享](https://www.androidwork.club/)
+</code></pre>
+
+<h2 id="toc_1">B-树</h2>
+
+<p><img src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=35678d408794a4c21e2eef796f9d70b0/4e4a20a4462309f773bdc15d720e0cf3d6cad6ab.jpg" alt=""/></p>
+
+<h3 id="toc_2">概念</h3>
+
+<p>B-树就是B树。B树是为了磁盘或其他存储设备而设计的多叉平衡查找树，更好的降低磁盘的I/O操作。</p>
+
+<h3 id="toc_3">特点</h3>
+
+<p>一颗m阶的B树，它具有以下特点：</p>
+
+<ol>
+<li><p>树中每个节点最多含有m个孩子且大于等于2，即满足：ceil(m/2) &lt;=  m &lt;= m</p></li>
+<li><p>除根节点和叶子节点外，其他每个节至少有[ceil(m/2)]个孩子，其中ceil()为取上限函数，即ceil(3/2) = 2。</p></li>
+<li><p>若根节点不为叶子节点则至少有两个孩子。</p></li>
+<li><p>所有叶子节点都出现在同一层，B树的叶子节点可以看成外部节点没有关键字信息。</p></li>
+<li><p>有K个孩子的非叶子节点包含K-1个关键字（或者叫元素），且按照递增的顺序排列。</p></li>
+<li><p>关键字数量n满足ceil(m/2)-1 &lt;=n&lt;=m-1;</p></li>
+</ol>
+
+<h3 id="toc_4">基本操作</h3>
+
+<p>对B-树的增删查。</p>
+
+<h4 id="toc_5">插入</h4>
+
+<p>对高度为h的m阶B树，新节点一般是插在第h层。通过检索可以确定关键字应插入的节点位置，分两种情况讨论<br/>
+1.若该节点的关键字个数小于m-1，则直接插入。<br/>
+2.若该节点关键字个数等于m-1，则将引起结点的分裂。以中间关键字为界将结点一分为二，产生一个新节点，并把中间关键字插入到父结点（h-1）层中；<br/>
+重复上述工作，最坏情况 一直分裂到根结点，建立一个新的根节点，整个B树增加一层。</p>
+
+<p>创建一颗5阶B树，添加以下元素 C N G A H E K Q M F W L T Z D P R X Y S，按照上面规则，<strong>关键字小于m-1时添加，大于m-1时分裂</strong>，实现如下：（手稿看不清楚请见谅）</p>
+
+<p><img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/7437dce340f81f38805922c9a6fa8c2a.jpg" alt=""/><br/>
+分析：</p>
+
+<ol>
+<li>由于5阶B树，其最大关键字的个数m为4，故依次添加C、N、G、A，按照字母排列顺序。</li>
+<li>当添加E时，如图步骤2，m=5，大于4需要分裂。把中间位置的结点G作为根节点，其左孩子结点为AC，右孩子为HN。</li>
+<li>按照上面规律当关键字个数小于4添加到对应位置，大于4，需要分裂，提取中间关键字为父节点，并且把其他结点赋值给左右孩子结点。</li>
+</ol>
+
+<h4 id="toc_6">删除</h4>
+
+<p>1.首先查找B树中需要删除的元素，如果存在则将该元素在其结点中删除，删除后首先判断该元素是否有左右孩子结点，有的话则上移孩子结点中的某个相近的元素到父结点中，然后移动之后的元素；如果没有，直接删除，移动之后的元素。<br/>
+2.删除元素移动相应元素之后，如果某结点中元素数目小于ceil(m/2)-1，则需要看某相邻兄弟结点是否丰满，如果丰满，则向父节点接一个元素来满足条件；如果相邻兄弟不丰满，则该节点与其相邻的某一兄弟结点进行“合并”成一个结点。</p>
+
+<p>接着上面的5阶B数研究，它的关键字数 ceil(m/2)-1&lt;m&lt;m-1 即 大于2，小于4，<strong>遵循关键字数小于2就合并，大于4就分裂规则。</strong>下面一次删除H 、T 、R 、E。</p>
+
+<p><img src="http://bmob-cdn-12787.b0.upaiyun.com/2018/05/27/0d71105240208a4180a19f55a28e746a.jpg" alt=""/><br/>
+分析：</p>
+
+<ol>
+<li>删除H时，其结点的关键字个数m为2，不满足小于2就合并的规则。</li>
+<li>当删除T时，如图步骤2，Q所在的结点关键字个数为1，小于2符合合并的规则。此时他的右孩子结点的关键字为3大2，即可借一个关键字给其父节点，如图步骤3。</li>
+<li>继续删除R时，如图步骤4，S所在结点关键字个数为1小于2，则需要合并。即向其父节点借一个关键字W，此时其父节点只剩下一个Q关键字小于2，则它也需要合并，由于它的右孩子结点关键字个数大于2，则向其右孩子结点借一个关键来满足条件。</li>
+<li>最后删除E时，F所在结点关键字数小于1，所以需要向其父节点借一个D来满足条件，此时G结点只剩一个关键字，小于2则它也需要向父节点借一个M来满足条件，此时GM 和QX没有父节点所以将其合并，关键字为4 符合条件，最后树结构减少一层。</li>
+</ol>
+
+<h4 id="toc_7">查找</h4>
+
+<p>采用中序遍历</p>
+
+<h2 id="toc_8">B+树</h2>
+
+<p><img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=f3cc4308d900baa1ae214fe92679d277/63d0f703918fa0ec640beae92e9759ee3c6ddb02.jpg" alt=""/></p>
+
+<h3 id="toc_9">概念</h3>
+
+<p><strong>B+树</strong>是一种树数据结构，是一个n叉排序树，每个节点通常有多个孩子，一个B+树包含根节点、内部结点、叶子节点。根节点可能是一个叶子节点，也可能是一个包含两个或者两个以上孩子结点的结点。</p>
+
+<p><strong>用途：</strong>B+树通常用于数据库和操作系统的文件系统中。能够保持数据稳定有序，其插入和修改拥有较稳定的对数时间复杂度。B+树元素自底向上插入。</p>
+
+<h3 id="toc_10">特点</h3>
+
+<ol>
+<li>有n个孩子的结点中含有n个关键字，每个关键字不保存数据，只用来保存索引，所有数据都保存在叶子节点。</li>
+<li>所有叶子节点中包含了全部关键字的信息，及指向含这些关键字记录的指针，且叶子结点本身依关键字的大小自小而大顺序连接，所有叶子节点在同一层。</li>
+<li>所有的非叶子结点可以看成是索引部分，结点中仅包含子树中的最小值（或最大值）关键字。通常在B+树上有两个头指针，一个指向根结点，一个指向关键字最小的叶子节点</li>
+</ol>
+
+<h3 id="toc_11">基本操作</h3>
+
+<p>与B树的操作是类似的，不过需要注意的是，增加的时候，如果存在满员的情况，将选择结点中的值作为新索引，还有在删除的时候，索引中的关键字并不会删除，也不会存在父节点的关键字下沉的情况。</p>
+
+<h2 id="toc_12">B树与B+树的区别</h2>
+
+<ol>
+<li>关键字的数量不同。所有的叶子节点中包含了全部关键字信息，及指向含有这些关键字记录的指针，且叶子结点本身依关键字的大小自小而大的顺序连接。（而B树的叶子结点并没有包括全部需要查找的信息）</li>
+<li>分值结点的构造不同。所有的非终端结点可以看成是索引部分，结点中仅含有其子树根结点中最大（或最小）关键字。（而B树的非终结点也包含需要查找的有效信息）</li>
+<li>查询不同。B树在找到具体数据以后结束；B+树则需要通过索引找到叶子结点的数据才结束。</li>
+</ol>
+
+<h2 id="toc_13">参考</h2>
+
+<p><a href="https://blog.csdn.net/v_july_v/article/details/6530142">https://blog.csdn.net/v_july_v/article/details/6530142</a><br/>
+<a href="https://www.jianshu.com/p/6f68d3c118d6">https://www.jianshu.com/p/6f68d3c118d6</a><br/>
+<a href="https://www.cnblogs.com/George1994/p/7008732.html">https://www.cnblogs.com/George1994/p/7008732.html</a><br/>
+<a href="https://baike.baidu.com/item/B%2B%E6%A0%91">https://baike.baidu.com/item/B%2B%E6%A0%91</a></p>
+
+<br><br><br><br>
+
+</div></body>
+
+</html>
