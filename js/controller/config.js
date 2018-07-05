@@ -7,8 +7,8 @@ if (debug){
     var serverUrl = 'http://localhost:8888';
     var photoUrl = 'http://localhost:8080'
 }else {
-    var serverUrl = 'http://193.112.130.129:8888';
-    var photoUrl = 'http://193.112.130.129:8080'
+    var serverUrl = 'https://www.androidwork.club/api';
+    var photoUrl = 'http://www.androidwork.club:8080'
 }
 
 
